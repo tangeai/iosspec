@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
   s.homepage = "https://gitee.com/tange-ai/tgbasemodule.git"
   s.description = "TODO: Add long description of the pod here."
   s.xcconfig = {"ENABLE_BITCODE"=>"NO"}
-  s.source = —embedded
 
   s.ios.deployment_target    = '11.0'
   s.ios.vendored_framework   = 'ios/TGBaseModule.framework'
