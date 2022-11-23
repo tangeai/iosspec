@@ -10,15 +10,17 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://gitee.com/tange-ai/tgopenbaseiot.git', :tag => s.version.to_s }
 #  s.compiler_flags ='-DLINUX','-D__MAC_OS__'
   s.ios.deployment_target    = '11.0'
-  s.ios.vendored_frameworks   = 'ios/TGBaseIOT.framework'
-  s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit'
-  s.libraries = 'c++','sqlite3.0','z','iconv'
-  s.dependency 'TGCommonBaseModule'
-  s.dependency 'TGBaseModule/Relay'
-  s.dependency 'TGBaseModule/JSONKit'
-  s.dependency 'TGBaseModule/Ping'
-  s.dependency 'TGBaseModule/ShangYun'
-  s.dependency 'TGBaseModule/DAAudioVideo'
+#  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
+#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
+  s.source_files = 'ios/TGBaseIOT.framework/Headers/*.h'
+  s.ios.vendored_frameworks   = 'ios/**/*.framework'
+  s.ios.vendored_libraries = 'ios/**/*.a'
+  s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
+  s.libraries = 'c++','sqlite3.0','z','iconv','xml2'
+  s.dependency 'JSONKit','1.0.0'
   s.dependency 'ZXingObjC'
   s.dependency 'Masonry'
+  s.dependency 'AFNetworking'
+  s.dependency 'SVGKit','3.3.0'
+  s.dependency 'CocoaLumberjack'
 end
