@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.xcconfig = {"ENABLE_BITCODE"=>"NO"}
   s.source           = { :git => 'https://gitee.com/tange-ai/tgopenbaseiot2x.git', :tag => s.version.to_s }
   s.compiler_flags ='-DLINUX','-D__MAC_OS__'
-  s.ios.deployment_target    = '13.2'
+  s.ios.deployment_target    = '11.0'
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
   s.source_files = 'ios/TGBaseIOT.framework/Headers/*.h'
@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
   s.ios.vendored_libraries = 'ios/**/*.a'
   s.frameworks = 'CoreGraphics', 'Security','UIKit','WebKit','CoreLocation','CoreMedia','CoreVideo','ImageIO','CoreText','AVFoundation'
   s.libraries = 'c++','sqlite3.0','z','iconv','xml2'
-  s.dependency 'DAAudioVideo'
   s.dependency 'JSONKit','1.0.0'
   s.dependency 'ZXingObjC'
   s.dependency 'Masonry'
