@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target    = '12.1'
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
-  s.source_files = 'DAAudioVideo.framework/Headers/*.h'
-  s.ios.vendored_frameworks   = '*.framework'
+  s.source_files = 'ios/DAAudioVideo.framework/Headers/*.h'
+  s.ios.vendored_frameworks   = 'ios/**/*.framework'
   s.libraries = 'bz2','c++','iconv','z'
   s.dependency 'CocoaLumberjack'
   s.dependency 'ffmpeg-kit-ios-full', '~> 5.1'
