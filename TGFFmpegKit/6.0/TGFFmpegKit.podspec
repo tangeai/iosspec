@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 #  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' ,'DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__'}
 #  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64','DEVELOPMENT_TEAM' => 'UAL776976T','OTHER_CFLAGS' => '-DLINUX -D__MAC_OS__' }
 #  s.source_files = 'ios/DAAudioVideo.framework/Headers/*.h'
-  s.ios.vendored_frameworks   = 'ios/**/*.framework'
+  s.ios.vendored_frameworks   = 'ios/**/*.xcframework'
   s.frameworks = 'AVFoundation','AudioToolbox','CoreMedia','VideoToolbox'
   s.libraries = 'bz2','c++','iconv','z'
 end
