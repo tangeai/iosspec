@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "liubin" => "liubin361163@163.com" }
   s.source           = {
-    :git => "https://gitee.com/tange-ai/tgffmpegkit.git",
+    :git => "https://github.com/tangeai/tgffmpegkit.git",
     :tag => s.version.to_s,
     :submodules => true
   }

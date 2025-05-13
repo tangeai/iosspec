@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                  'Eric Man'        => 'meric.au@gmail.com',
                  'Matt Rajca'      => 'matt.rajca@me.com',
                  'Moritz Pfeiffer' => 'moritz.pfeiffer@alp-phone.ch' }
-  s.source   = { :git => 'https://gitee.com/tange-ai/sv.git', :tag => s.version.to_s }
+  s.source   = { :git => 'https://github.com/tangeai/svgkit.git', :tag => s.version.to_s }
   s.source_files = 'Source/*.{h,m}', 'Source/**/*.{h,m}'
   s.exclude_files = 'Source/include/*.h'
  # s.private_header_files = 'Source/SVGKDefine_Private.h'

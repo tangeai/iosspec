@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://gitee.com/tange-ai/jsonkit.git'
+  s.homepage         = 'https://github.com/tangeai/jsonkit.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liubin' => 'liubin361163@163.com' }
-  s.source           = { :git => 'https://gitee.com/tange-ai/jsonkit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/tangeai/jsonkit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
